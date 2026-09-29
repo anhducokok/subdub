@@ -4,12 +4,18 @@ import "../../global.css";
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-blue-500">
+    <View className="flex-1 items-center justify-center bg-background">
+      <Text className="text-xl font-bold text-success">
         Welcome to Nativewind!
       </Text>
-      <Link href="/onboarding" className="mt-4 rounded bg-black p-2 text-white">
+      <Link href="/onboarding" className="mt-4 rounded bg-primary p-4 text-white">
         Bắt đầu
+      </Link>
+      <Link href="/(auth)/sign-in" className="mt-4 rounded bg-primary p-4 text-white">
+        Đăng nhập
+      </Link>
+      <Link href="/(auth)/sign-up" className="mt-4 rounded bg-primary p-4 text-white">
+        Đăng ký
       </Link>
     </View>
   );
